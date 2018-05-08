@@ -8,7 +8,7 @@ var options = {
 };
 
 callback = function(response) {
-  var str = ''
+  var str = 
   response.on('data', function (chunk) {
     str += chunk;
   });
@@ -20,6 +20,5 @@ callback = function(response) {
 
 var req = http.request(options, callback);
 
-
-req.write("lorem ipsum");
+req.write("Putz");
 req.end();
